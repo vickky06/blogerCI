@@ -25,6 +25,7 @@ class CustomPage {
     async login() {
         const user = await userFactory();
         const { session, sig } = sessionFactory(user);                 ///requires mongo object
+        // await this.page.setExtraHTTPHeaders({'Cookie': 'SetCurrency=USD; lang=en_EN'})
         await this.page.setCookie({ name: "session", value: session });   ///sessionString = session
         await this.page.setCookie({ name: "session.sig", value: sig });
         await this.page.goto('http://localhost:3000/blogs', { waitUntil: 'networkidle0' });

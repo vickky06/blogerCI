@@ -1,6 +1,6 @@
 const KeyGrip = require('keygrip');
 const keys = require('../../config/keys');
-const Buffer = require(`safe-Buffer`).Buffer;
+const Buffer = require(`safe-buffer`).Buffer;
 
 module.exports = (user) => {
     const sessionObject = {
