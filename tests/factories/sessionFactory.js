@@ -1,4 +1,4 @@
-const KeyGrip = require('keyGrip');
+const KeyGrip = require('keygrip');
 const keys = require('../../config/keys');
 const Buffer = require(`safe-Buffer`).Buffer;
 
